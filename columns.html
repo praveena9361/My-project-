@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COLUMN</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+    .column{
+        column-count: 4;
+        column-width: 250px;
+        columns:4 250px;
+        column-rule:3px dashed rgb(150, 5, 5);
+        column-gap:4rem;
+    }
+    .coloumn p{
+        margin-top:0;
+       
+    }
+    .column h2{
+        margin-top: 0;
+        background-color: #333;
+        color:white;
+        padding: 1rem;
+        break-inside: avoid;
+        break-before: column;
+    }
+    .column .quote{
+        margin-top: 2rem;
+         font-size: 3rem;
+         text-align: center;
+         color:#333;
+         column-span: all;
+    }
+    .nowrap{
+        white-space: nowrap;
+    }
+</style>
+<body>
+    <section class="column">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, alias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae. Est, in.  </p>
+    <p>Neque corrupti unde nemo illum officia dolorem consequuntur nam itaque! Quisquam maiores eos, quod repudiandae.  Neque et maxime tempore, alias maiores ducimus quidem.</p>
+   <p class="quote">&#8220;Where is my rug,man?&#8221;<span class="nowrap">&#8212;The dude</p>
+    <p>Unde magnam saepe minima consequatur dolorem dolor blanditiis quasi atque.Harum quibusdam, rem veritatis ab vitae totam est saepe, quidem voluptate tenetur ipsam culpa atque sunt.
+    Nemo, nostrum sed deleniti, officiis minima </p>
+    <p>Natus exercitationem aperiam quia fugiat perspiciatis excepturi vero earum nam. Nemo harum corrupti distinctio dolorum ea. Tenetur autem optio aliquid, ducimus perferendis</p>
+    </section>
+    <p>Esse non facere aliquid voluptatem incidunt asperiores similique qui nesciunt.architecto tempora, dolores officia!</p>
+</body>
+</html>
