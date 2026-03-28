@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<style>body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+    background-color: #ffffff;
+}
+.outer-container{
+    border:3px;
+    border-style: dotted;
+    border-color: #000;
+    height:85vh;
+    width:75vh;
+    margin: 40px auto;
+    position: relative;
+}
+.inner-container{
+    border:2px;
+    border-style:solid;
+    border-color: blue;
+    height:50vh;
+    width:40vw;
+    margin:200px auto;
+    position: relative;
+}
+.box{
+    width: 150px;
+    height:150px;
+    color:#ffffff;
+    padding:1rem;
+}
+.absolute{
+    background-color: blue;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+   
+}
+.relative{
+    background-color: brown;
+      position:relative;
+    left:0px;
+    top:300px;
+  
+}
+.fixed{
+    background-color: chocolate;
+    top:100px;
+    position:fixed;
+}
+.sticky{
+    background-color: rgb(167, 86, 167);
+  margin:0;
+    position:sticky;
+}
+/*////////////////////*/
+section{
+    height:100vh;
+}
+.blue{background-color: blue;}
+.red{background-color: red;}
+.green{background-color: green;}
+
+header,footer{
+    color:#fff;
+    text-align: center;
+    height:100px;
+    
+}
+header{
+    position: sticky;
+    top:0;
+    font-size: 5rem;
+}
+
+footer{
+    background-color: #000;
+    position:sticky;
+    bottom:0;
+  font-size: 3rem;
+}
+
+a:visited{
+    color:#fff;
+}
+.social{
+    background-color: royalblue;
+    color:#fff;
+    font-size: inherit;
+    padding:1rem;
+    position:fixed;
+    top:30%;
+    left:0;
+    z-index: 1;
+}</style>
+<body>
+   <!--  <div class="outer-container">
+        <div class="inner-container">
+            <div class="box absolute">Absolute </div>
+            <div class="box relative">Relative</div>
+            <div class="box fixed">Fixed</div>
+            <div class="box sticky">Sticky</div>
+            
+        </div>
+    </div> -->
+   
+    <button class="social">🚀</button>
+    <section id="one">
+        <header class="blue">Header one</header>
+        <h2>One</h2>
+    </section>
+    <section id="two">
+        <header class="red">Header two</header>
+        <h2>Two</h2>
+    </section>
+    <section id="three">
+        <header class="green">Header three</header>
+        <h2>Three</h2>
+    </section>
+     <footer>
+        <a href="#one">One</a>
+        <a href="#two">Two</a>
+        <a href="#three">Three</a>
+     </footer>
+</body>
+</html>
